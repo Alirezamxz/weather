@@ -6,7 +6,7 @@ const resDesc = document.querySelector('.res-desc')
 
 
 searchBTN.addEventListener('click', () => {
-    fetch('http://api.openweathermap.org/data/2.5/weather?q='+cityValue.value+'&APPID=e1361737ee2c0ce5dc178f33aa593baf')
+    fetch('http://api.openweathermap.org/data/2.5/weather?q='+cityValue.value+'&APPID=YOUR_APP_ID')
     .then(res => res.json())
     .then(data => {
         resCity.textContent = data['name']
